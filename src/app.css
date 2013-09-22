@@ -1,0 +1,118 @@
+root { 
+  display: block;
+}
+
+body{
+  margin: 0px;
+  overflow: hidden;
+}
+
+.PoolContainer{
+  /*border: 1px solid #CCC;*/
+  background-color: #EEE;
+  width: 99%;
+  height: 600px;
+  margin: 1px 1px;
+  padding: 3px;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+#r2{
+  width: 80%;
+  float: left;
+}
+
+#r2-chosen{
+  width: 17%;
+  background-color: #FEE;
+  height: 600px;
+  margin-left: 5px;
+  padding: 3px;
+  border-radius: 3px;
+  overflow: auto;
+  float: left;
+}
+
+.r1-item, .r1-selected{
+  background-color: #DFD;
+  font-family: '黑体',sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  float: left;
+  margin: 6px;
+  width: 140px;
+  overflow: hidden;
+  line-height: 1.6em;
+  text-align: center;
+  border: 1px solid #090;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.r1-selected{
+  background-color: #F00;
+  color:#FF0;
+}
+
+.z-toolbar{
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+
+#taPool{
+  width: 80%;
+  height: 560px;
+}
+
+.pool-size{
+  color: #666;
+}
+
+#r3{
+  width: 28%;
+  float: left;
+}
+#r3 .r1-item, #r3-group-wrapper .r1-selected{
+  font-size: 15px;
+  width: 82px;
+  margin: 3px;
+  color: #000;
+  background-color: #DFD;
+}
+#r3-group-wrapper{
+  width: 68%;
+  float: left;
+  margin-left: 5px;
+  border-radius: 3px;
+  height: 600px;
+  overflow: auto;
+  background-color: #FEE;
+  padding: 3px;
+}
+#tbGrouping{
+  font-size: 1.3em;
+  padding: 3px;
+  width: 95%;
+}
+.group-title{
+  background-color: #666;
+  color: #EEE;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 3px;
+  margin-top:2px;
+  cursor: pointer;
+}
+.group-content{
+  margin-bottom: 1em;
+  padding: 3px;
+}
+
+.rand-group-panel{
+  background-color: #FFF;
+  padding: 2px;
+  border: 1px dotted #000;
+  border-radius: 3px;
+}

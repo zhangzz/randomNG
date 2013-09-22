@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>注意，点名啦！</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="lib/css/overcast/jquery-ui-1.10.3.custom.min.css"/>
+    <link rel="stylesheet" type="text/css" href="app.css"/>
+
+    <script src="lib/jquery-1.9.1.js"></script>
+    <script src="lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="lib/json2.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <DIV id="tabs" class="ui-layout-center">
+      <UL>
+        <LI><A href="#tabs-1">随机点名（可重复）</A></LI>
+        <LI><A href="#tabs-2">随机点名（不重复）</A></LI>
+        <LI><A href="#tabs-3">随机分组</A></LI>
+        <LI><A href="#tabs-4">学生名单</A></LI>
+      </UL>
+      <DIV id="tabs-1">
+        <div id="r1" class="PoolContainer" ></div>
+        <div class="z-toolbar">
+          <button data-cmd="r1-reset">重置</button>
+          <span id="sp-r1" class="pool-size"></span>
+          <button data-cmd="r1-mark-one">&nbsp;&nbsp;&nbsp;&nbsp;点名&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        </div>        
+      </DIV>
+      <DIV id="tabs-2" >
+        <div id="r2" class="PoolContainer" ></div>
+        <div id="r2-chosen"></div>
+        <div style="clear: both;"></div>
+        <div class="z-toolbar">
+          <button data-cmd="r2-reset">重置</button>
+          <span  id="sp-r2"  class="pool-size"></span>
+          <span>&nbsp;&nbsp;选择&gt;&gt;</span>
+          <button data-cmd="choose-one">&nbsp;1&nbsp;个</button>
+          <button data-cmd="choose-two">&nbsp;2&nbsp;个</button>
+          <button data-cmd="choose-three">&nbsp;3&nbsp;个</button>
+          <span>&nbsp;&nbsp;&gt;&gt;</span>
+        </div> 
+      </DIV>
+      <div id="tabs-3">
+        <div id="r3" class="PoolContainer"></div>
+        <div id="r3-group-wrapper">
+        </div>
+        <div style="clear: both;"></div>
+        <div class="z-toolbar">
+          <button data-cmd="r3-reset">重置</button>
+          <span id="sp-r3" class="pool-size"></span>
+          <button data-cmd="grouping">分组</button>
+          <button data-cmd="grp-expand-all">显示成员</button>
+          <button data-cmd="grp-fold-all">隐藏成员</button>
+          <button data-cmd="grp-copy-text">拷贝文本</button>
+        </div>
+      </div>
+      <DIV id="tabs-4">
+        <div>请在此输入学生姓名，每个学生一行。</div>
+        <div>
+          <textarea id="taPool"></textarea>
+        </div>
+      </DIV>
+    </DIV>
+    <div id="groupingDlg">
+      <div>请在下面输入每个组的人数，数字之间用空格分隔。</div>
+      <div> 
+        <input id="tbGrouping" />
+      </div>
+      <div id="grouingInfo">
+      </div>
+    </div>
+  </body>
+</html>
