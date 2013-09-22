@@ -1,5 +1,5 @@
 {
-  "name": "rand_names",
+  "name": "randNG",
   "main": "index.html",
   "window": {
     "title": "随机点名、分组",
